@@ -5,6 +5,7 @@ var morgan = require('morgan');
 var swig = require('swig');
 var fs = require('fs');
 var path = require('path');
+var router = require('./routes');
 
 // templating boilerplate setup
 app.engine('html', swig.renderFile); // how to render html templates
@@ -19,13 +20,11 @@ app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: true })); // for HTML form submits
 app.use(bodyParser.json()); // would be for AJAX requests
 
-// start the server
-var server = app.listen(3000, function(){
-  console.log('listening on port 3000');
-});
+
 
 app.use(express.static(path.join(__dirname, '/public')));
 
+app.use('/', router);
 // catch 404 (i.e., no route was hit) and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
@@ -40,3 +39,8 @@ app.use(function(err, req, res, next) {
   res.render('error', {});
 });
 
+
+// start the server
+var server = app.listen(3000, function(){
+  console.log('listening on port 3000');
+});
