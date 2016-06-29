@@ -11,7 +11,7 @@ var Hotel = db.define('hotel', {
     validate: { max: 5, min: 1}
   },
   amenities: {
-    type: Sequelize.ARRAY(Sequelize.STRING)
+    type: Sequelize.STRING
   }
 })
 
