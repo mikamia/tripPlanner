@@ -6,7 +6,7 @@ var Restaurant = db.define('restaurant', {
     type: Sequelize.STRING
   },
   cuisine: {
-    type: Sequelize.ARRAY(Sequelize.STRING)
+    type: Sequelize.STRING
   },
   price:{
     type: Sequelize.INTEGER,
