@@ -15,12 +15,15 @@ router.get('/', function(req,res,next){
 
 	Promise.all([dbHotels, dbRestaurant, dbActivity])
 	.then(function(arr, err){
-		console.log("in here");
 		if(err) console.error(err);
-		res.json(arr);
+		res.render('index', {
+			hotels: arr[0],
+			restaurants: arr[1],
+			activities: arr[2]}
+		);
 
 	});
-	
+
 
 })
 
