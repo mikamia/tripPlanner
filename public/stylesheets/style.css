@@ -1,3 +1,6 @@
+body {
+  color: #3b3a36; }
+
 h1 {
   font-family: "Helvetica"; }
 
@@ -8,7 +11,7 @@ h1 {
   float: left; }
 
 .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
-  background-color: #438496; }
+  background-color: #c0dfd9; }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #000;
@@ -18,17 +21,17 @@ h1 {
 a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: white;
   /*BACKGROUND color for active*/
-  background-color: #438496; }
+  background-color: #c0dfd9; }
 
 .navbar-default {
-  background-color: #438496;
-  border-color: #438496; }
+  background-color: #c0dfd9;
+  border-color: #c0dfd9; }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: #262626;
   text-decoration: none;
-  background-color: #438496;
+  background-color: #c0dfd9;
   /*change color of links in drop down here*/ }
 
 .nav > li > a:hover,
@@ -42,10 +45,10 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
   /*Change active text color here*/ }
 
 .panel-default {
-  border-color: #e4a2a9;
+  border-color: #dde1d6;
   border-width: 2px; }
   .panel-default .panel-heading {
-    background-color: #efcace; }
+    background-color: #e9ece5; }
 
 .form-group .form-inline select.form-control {
   width: 90%;
@@ -95,3 +98,11 @@ p.optionName {
 p.dayName {
   display: inline;
   margin-right: 10px; }
+
+.btn-primary {
+  background-color: #b3c2bf;
+  border-color: #b3c2bf; }
+
+.btn-danger {
+  background-color: #3b3a36;
+  border-color: #3b3a36; }

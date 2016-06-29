@@ -1,9 +1,12 @@
 $font :  'Helvetica';
-$summer-sky: #286DA8;
-$warm-peach: #CD5360;
-$field: #B37D4E;
-$breeze: #438496;
+$summer-sky: #c0dfd9;
+$warm-peach: #e9ece5;
+$field: #b3c2bf;
+$charcoal: #3b3a36;
 
+body{
+  color: $charcoal;
+}
 
 h1 {
   font-family: $font;
@@ -18,7 +21,7 @@ h1 {
 }
 
 .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand{
-  background-color: $breeze;
+  background-color: $summer-sky;
 }
 
 
@@ -29,19 +32,19 @@ color: #000;  /*Sets the text hover color on navbar*/
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
 a:hover, .navbar-default .navbar-nav > .active > a:focus {
 color: white; /*BACKGROUND color for active*/
-background-color: $breeze ;
+background-color: $summer-sky ;
 }
 
  .navbar-default {
-   background-color: $breeze ;
-   border-color: $breeze ;
+   background-color: $summer-sky ;
+   border-color: $summer-sky ;
 }
 
  .dropdown-menu > li > a:hover,
   .dropdown-menu > li > a:focus {
    color: #262626 ;
   text-decoration: none;
- background-color: $breeze ;  /*change color of links in drop down here*/
+ background-color: $summer-sky ;  /*change color of links in drop down here*/
   }
 
 .nav > li > a:hover,
@@ -57,10 +60,10 @@ background-color: $breeze ;
 
 
 .panel-default {
-  border-color: lighten($warm-peach,20%);
+  border-color: darken($warm-peach, 5%);
   border-width: 2px;
   .panel-heading{
-    background-color: lighten($warm-peach, 30%);
+    background-color: $warm-peach;
   }
 
 }
@@ -124,3 +127,12 @@ p{
   }
 }
 
+
+.btn-primary {
+  background-color: $field;
+  border-color: $field;
+}
+.btn-danger{
+  background-color: $charcoal;
+  border-color: $charcoal;
+}
