@@ -1,30 +1,53 @@
 {% extends 'layout.html' %}
 
 {% block body %}
+<div class = "container">
+	<div class= "row">
+	<div class= "col-lg-8">
+	</div>
 
-<h1>DANGYU</h1>
-<h2>DANGYU</h2>
-<h3>DANGYU</h3>
+	<div class= "col-lg-4">
+			<div class = "form-group">
+				<form class = "form-inline">
+					<label for="hotels">Hotels</label><br>
+					<select class = "form-control">
+					  {% for hotel in hotels %}
+					  <option value ="{{hotel.name}}">{{hotel.name}}</option>
+					  {% endfor %}
+					</select>
+					<button type="button" class="btn btn-primary btn-xs">+</button>
+				</form>
+			</div>
+			<div class = "form-group">
+				<form class = "form-inline">
+					<label for = "restaurants">Restaurants</label><br>
+					<select class = "form-control">
+					  {% for restaurant in restaurants %}
+					  <option value = "{{restaurant.name}}">{{restaurant.name}}</option>
+					  {% endfor %}
+					</select>
+					<button type="button" class="btn btn-primary btn-xs">+</button>
+				</form>
+			</div>
+			<div class = "form-group">
+				<form class = "form-inline">
+					<label for="activities">Activities</label><br>
+					<select class = "form-control">
+					  {% for activity in activities %}
+					  <option value ="{{activity.name}}">{{activity.name}}</option>
+					  {% endfor %}
+					</select>
+					<button type="button" class="btn btn-primary btn-xs">+</button>
+				</form>
+			</div>
+	</div>
+
+	<div class= "col-lg-4">
+	</div>
 
 
-<select>
-  {% for hotel in hotels %}
-  <option value ="{{hotel.name}}">{{hotel.name}}</option>
-  {% endfor %}
-</select>
+	</div>
 
-<select>
-  {% for restaurant in restaurants %}
-  <option value ="{{restaurant.name}}">{{restaurant.name}}</option>
-  {% endfor %}
-</select>
-
-<select>
-  {% for activity in activities %}
-  <option value ="{{activity.name}}">{{activity.name}}</option>
-  {% endfor %}
-</select>
-
-
+</div>
 
 {% endblock %}
