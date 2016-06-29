@@ -1,16 +1,126 @@
 $font :  'Helvetica';
+$summer-sky: #286DA8;
+$warm-peach: #CD5360;
+$field: #B37D4E;
+$breeze: #438496;
+
 
 h1 {
-  font-family: $font
+  font-family: $font;
 }
 
-.map{
-	background: blue;
-
+#map-canvas {
+  height: 50vh;
 }
 
 .left{
 	float: left;
 }
 
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand{
+  background-color: $breeze;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #000;  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
+a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: white; /*BACKGROUND color for active*/
+background-color: $breeze ;
+}
+
+ .navbar-default {
+   background-color: $breeze ;
+   border-color: $breeze ;
+}
+
+ .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+   color: #262626 ;
+  text-decoration: none;
+ background-color: $breeze ;  /*change color of links in drop down here*/
+  }
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+   text-decoration: none;
+   background-color: silver; /*Change rollover cell color here*/
+ }
+
+
+ .navbar-default .navbar-nav > li > a {
+  color: white; /*Change active text color here*/
+   }
+
+
+.panel-default {
+  border-color: lighten($warm-peach,20%);
+  border-width: 2px;
+  .panel-heading{
+    background-color: lighten($warm-peach, 30%);
+  }
+
+}
+
+.form-group .form-inline select.form-control{
+  width:90%;
+  margin-right: 10px;
+}
+
+.btn-circle {
+  width: 49px;
+  height: 49px;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 20px;
+  line-height: 2.00;
+  border-radius: 30px;
+}
+
+.btn-circle-micro {
+  width: 19px;
+  height: 19px;
+  text-align: center;
+  padding: 1px 0;
+  font-size: 13px;
+  line-height: 0.1;
+  border-radius: 30px;
+}
+
+.btn-circle-sm {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  padding: 2px 0;
+  font-size: 20px;
+  line-height: 1.65;
+  border-radius: 30px;
+}
+
+.btn-circle-lg {
+  width: 79px;
+  height: 79px;
+  text-align: center;
+  padding: 13px 0;
+  font-size: 30px;
+  line-height: 2.00;
+  border-radius: 70px;
+}
+
+
+p{
+  &.optionName{
+    width:90%;
+    margin-right: 10px;
+    display:inline-block;
+  }
+
+  &.dayName{
+    display: inline;
+    margin-right: 10px;
+  }
+}
 

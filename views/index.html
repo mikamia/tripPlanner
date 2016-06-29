@@ -4,33 +4,34 @@
 <div class = "container">
 	<div class= "row">
 		<div class= "col-lg-8 map">
-			Whatever
-			<br><br><br>
-			<br><br><br>
-			<br><br><br>
-			<br><br><br>
-			<br><br><br>
-			<br><br><br>
-			<br><br><br>
-			<br><br><br>
-			<br><br><br>
-			<br><br><br>
-			<br><br><br>
-			<br><br><br>
+			<div id="map-canvas">
+
+      </div>
 		</div>
 
 		<div class= "col-lg-4 left">
+    <div class = "row">
+        <div class="panel panel-default">
+          <div class="panel-body">
+
+
 				<div class = "form-group">
-					<form class = "form-inline">
+
+					<form class = "form-inline ">
+
 						<label for="hotels">Hotels</label><br>
 						<select class = "form-control">
 						  {% for hotel in hotels %}
 						  <option value ="{{hotel.name}}">{{hotel.name}}</option>
 						  {% endfor %}
 						</select>
+
 						<button type="button" class="btn btn-primary btn-xs">+</button>
+
 					</form>
+
 				</div>
+
 				<div class = "form-group">
 					<form class = "form-inline">
 						<label for = "restaurants">Restaurants</label><br>
@@ -42,6 +43,7 @@
 						<button type="button" class="btn btn-primary btn-xs">+</button>
 					</form>
 				</div>
+
 				<div class = "form-group">
 					<form class = "form-inline">
 						<label for="activities">Activities</label><br>
@@ -51,16 +53,66 @@
 						  {% endfor %}
 						</select>
 						<button type="button" class="btn btn-primary btn-xs">+</button>
-					</form>
+					</form></div></div></div>
 				</div>
+
 		</div>
 
 		<div class= "col-lg-4 left">
-			<div class = "col-lg-12 row">Day 2</div>
-			<div class = "col-lg-12">
-				<div class = "row"> Scroll </div>
-				<div class = "row"> Itinerary </div>	
-			</div>
+      <div class = "row">
+        <div class="panel panel-default">
+          <div class="panel-body">
+
+
+            <p class="dayName">
+             <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Day 2</p>
+
+            <button type="button" class="btn btn-danger btn-circle-micro"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> </button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class = "row">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <div class ="scrollButtons">
+              <button type="button" class="btn btn-primary btn-circle-micro">1</button>
+              <button type="button" class="btn btn-primary btn-circle-micro">2</button>
+              <button type="button" class="btn btn-primary btn-circle-micro">3</button>
+              <button type="button" class="btn btn-primary btn-circle-micro"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> </button>
+              </div>
+            </h3>
+          </div>
+        <div class="panel-body">
+
+        <p>
+          <h5>My Hotels</h5>
+
+            <p class="optionName">Andaz Wall Street</p>
+            <button type="button" class="btn btn-danger btn-circle-micro"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> </button>
+            <br>
+
+
+
+        </p>
+        <p><h5>My Restaurants</h5>
+         <p class="optionName">Dangyu Cafe</p>
+            <button type="button" class="btn btn-danger btn-circle-micro"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> </button>
+            <br>
+        </p>
+        <p><h5>My Activities</h5>
+           <p class="optionName">Club Dangyu</p>
+            <button type="button" class="btn btn-danger btn-circle-micro"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> </button>
+            <br>
+        </p>
+        </div>
+      </div>
+    </div>
+
+
+
 		</div>
 
 
