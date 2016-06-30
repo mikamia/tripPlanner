@@ -1,11 +1,23 @@
 body {
-  color: #3b3a36; }
+  color: #3b3a36;
+  margin: 20px; }
 
 h1 {
   font-family: "Helvetica"; }
 
 #map-canvas {
-  height: 50vh; }
+  height: calc(100vh - 50px);
+  margin: auto; }
+
+@media (min-width: 768px) {
+  #map-canvas {
+    border-bottom: none;
+    border-left: none; }
+  .map-container {
+    padding: 0; }
+    .map-container > div {
+      position: fixed;
+      width: inherit; } }
 
 .left {
   float: left; }
