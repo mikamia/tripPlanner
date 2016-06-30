@@ -15,48 +15,49 @@
     <div class = "row">
         <div class="panel panel-default">
           <div class="panel-body">
+    				<div class = "form-group">
 
+    					<form class = "form-inline ">
 
-				<div class = "form-group">
+    						<label for="hotels">Hotels</label><br>
+    						<select class = "form-control">
+    						  {% for hotel in hotels %}
+    						  <option value ="{{hotel.name}}">{{hotel.name}}</option>
+    						  {% endfor %}
+    						</select>
 
-					<form class = "form-inline ">
+    						<button type="button" class="btn btn-primary btn-xs">+</button>
 
-						<label for="hotels">Hotels</label><br>
-						<select class = "form-control">
-						  {% for hotel in hotels %}
-						  <option value ="{{hotel.name}}">{{hotel.name}}</option>
-						  {% endfor %}
-						</select>
+    					</form>
 
-						<button type="button" class="btn btn-primary btn-xs">+</button>
+    				</div>
 
-					</form>
+    				<div class = "form-group">
+    					<form class = "form-inline">
+    						<label for = "restaurants">Restaurants</label><br>
+    						<select class = "form-control">
+    						  {% for restaurant in restaurants %}
+    						  <option value = "{{restaurant.name}}">{{restaurant.name}}</option>
+    						  {% endfor %}
+    						</select>
+    						<button type="button" class="btn btn-primary btn-xs">+</button>
+    					</form>
+    				</div>
 
-				</div>
-
-				<div class = "form-group">
-					<form class = "form-inline">
-						<label for = "restaurants">Restaurants</label><br>
-						<select class = "form-control">
-						  {% for restaurant in restaurants %}
-						  <option value = "{{restaurant.name}}">{{restaurant.name}}</option>
-						  {% endfor %}
-						</select>
-						<button type="button" class="btn btn-primary btn-xs">+</button>
-					</form>
-				</div>
-
-				<div class = "form-group">
-					<form class = "form-inline">
-						<label for="activities">Activities</label><br>
-						<select class = "form-control">
-						  {% for activity in activities %}
-						  <option value ="{{activity.name}}">{{activity.name}}</option>
-						  {% endfor %}
-						</select>
-						<button type="button" class="btn btn-primary btn-xs">+</button>
-					</form></div></div></div>
-				</div>
+    				<div class = "form-group">
+    					<form class = "form-inline">
+    						<label for="activities">Activities</label><br>
+    						<select class = "form-control">
+    						  {% for activity in activities %}
+    						  <option value ="{{activity.name}}">{{activity.name}}</option>
+    						  {% endfor %}
+    						</select>
+    						<button type="button" class="btn btn-primary btn-xs">+</button>
+    					</form>
+            </div>
+          </div>
+        </div>
+    	</div>
 
 		</div>
 
